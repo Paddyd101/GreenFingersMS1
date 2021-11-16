@@ -32,9 +32,9 @@ li{
 
 .link{
     color:#fafafa;
-    text-decoration: none;
+    /* text-decoration: none; */
     font-size: 20px;
-    list-style: none;
+    list-style-type: none;
 }
 
 .link:hover{
@@ -132,10 +132,6 @@ ul{
     margin-left: 20px;
 }
 
-#footer-nav-links li{
-    list-style: none;
-}
-
 .active{
     border-bottom: 1px solid #777777;
   }
@@ -154,4 +150,8 @@ ul{
 
   .footer{
       background-color: rgb(72, 71, 116);
+  }
+
+  .footer .link{
+      font-size: 20px;
   }
