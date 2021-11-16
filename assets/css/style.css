@@ -110,16 +110,12 @@ S
     align-content: center;
 }
 
-/* #header-sect{
-    background-color: rgb(72, 71, 116);
-} */
-
 ul{
     padding-right: 30px;
 }
 
 .hero-section{
-    height:75vh;
+    height:100vh;
     width:100%;
     background: url("../images/Hero-image.jpg") no-repeat center center fixed;
     position: relative;
@@ -140,13 +136,13 @@ ul{
     text-align: center;
     color: #fafafa;
     background-color: rgba(235, 214, 26, 0.7);
-    top: 150px;
-    border-radius: 10%;
+    top: 250px;
+    border-radius: 20%;
   }
 
   .services{
     width:100px;
-    height:200px;
+    height:250px;
     padding-top: 20px;
     padding-left: 10px;
     left: 5px;
@@ -162,11 +158,6 @@ ul{
         position: relative;
 
   }
-
-  /* .text-box{
-      bottom:30px;
-      position: relative;
-  } */
 
 .socials li{
     display: inline;
@@ -194,6 +185,10 @@ ul{
       
   }
 
+  blockquote{
+      margin-top: 15px;
+  }
+
   /* ---------------------footer------------------ */
 
   .footer{
@@ -219,14 +214,23 @@ ul{
     margin-right: 40px;
 }
 
-.area-container, .area-container li {
+/* .area-container, .area-container li {
+    text-align: center;
+    margin-top: 25px;
+    background-color: ;
+    color: #fafafa;
+    list-style: none;
+    border-radius: 10%;
+} */
+
+.purple-container, .purple-container li{
     text-align: center;
     margin-top: 25px;
     background-color: rgb(72, 71, 116);
     color: #fafafa;
     list-style: none;
-    border-radius: 10%;
-}
+    border-radius: 20%;
+} 
 
 .area-container ul{
     padding-top: 10px;
