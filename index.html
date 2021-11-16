@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
@@ -11,52 +11,80 @@
     <title>Green Fingers</title>
 </head>
 <body>
-    <!-- https://getbootstrap.com/docs/4.0/components/navbar/ -->
-    <nav class="navbar navbar-expand-md fixed-top">
-        <a href="index.html" class="navbar-brand">
-            <h1>Green Fingers <i class="fas fa-seedling"></i></h1>
-            <h5>Gardening and Outdoor Maintenance</h5>
-            </a>
+    <article class="container-fluid mt-3">
+        <!-- https://getbootstrap.com/docs/4.0/components/navbar/ -->
+        <nav class="navbar navbar-expand-md fixed-top">
+            <a href="index.html" class="navbar-brand">
+                <h2>Green Fingers <i class="fas fa-seedling"></i></h2>
+                <h6 class="tagline">Gardening and Outdoor Maintenance</h6>
+                </a>
 
-            <button class="navbar-toggler navbar-toggler-icon ml-auto" type="button" data-toggle="collapse" 
-            data-target="#navbarDrop" aria-controls="navbarDrop" aria-expanded="false" 
-            aria-label="Toggle navigation">
-                <span></span>
-              </button>
+                <button class="navbar-toggler navbar-toggler-icon ml-auto" type="button" data-toggle="collapse" 
+                data-target="#navbarDrop" aria-controls="navbarDrop" aria-expanded="false" 
+                aria-label="Toggle navigation">
+                </button>
 
-              <div class="collapse navbar-collapse" id="navbarDrop">
-                    <ul class="navbar-nav ml-auto">
-                            <li class=" active nav-item mr-3"><a class="link" href="/">Home</a></li>
-                            <li class=" nav-item mr-3"><a class="link" href="#">Previous Work</a></li>
-                            <li class=" nav-item mr-3"><a class="link" href="#">Contact Us</a></li>
-                    </ul>
-            </div>
-    </nav>
-
+                <div class="collapse navbar-collapse" id="navbarDrop">
+                        <ul class="navbar-nav ml-auto">
+                                <li class=" active nav-item mr-3"><a class="link" href="/">Home</a></li>
+                                <li class=" nav-item mr-3"><a class="link" href="#">Previous Work</a></li>
+                                <li class=" nav-item mr-3"><a class="link" href="#">Contact Us</a></li>
+                        </ul>
+                </div>
+        </nav>
 
     <!-- https://getbootstrap.com/docs/4.0/utilities/spacing/#notation -->
-    <article class="container-fluid mt-3">
-        <!-- hero-section -->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-12">
-                    <section class="header-sect">
-                        <div class="hero-frame">
-                            <div class="hero-section">
-
-                            </div>
-                        </div>
-                    </section>
+    
+<div class="container-fluid hero-section">
+    <div class="row justify-content-around ">
+        <div class=" text-box col-lg-6 col-sm-12 d-flex justify-content-center" >
+            <div class="services" id="cover-text">
+                <div>
+                    <h3>Services we Offer</h3>
+                    <h5>Grass Cutting</h5>
+                    <h5>Tree Surgery</h5>
+                    <h5>Power Washing</h5>
+                    <h5>Fencing, Decking, Patios</h5>
                 </div>
             </div>
         </div>
-        <!-- hero-section -->
+        <div class="text-box d-sm-none d-md-block col-md-12">
+                <div class="locations" id="cover-text">
+                    <div>
+                        <h3>We cover</h3>
+                        <h5>Fermanagh</h5>
+                        <h5>Tyrone</h5>
+                        <h5>Monaghan</h5>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+         <!-- Areas covered - only visible on medium and small devices        -->
+
+<section >
+    <div class="container-fluid area-container">
+        <div class="row justify-content-center">
+            <div class="col-12-xs d-md-none">
+                <ul>
+                    <h3>Areas We Cover</h3>
+                    <li><h5>Fermanagh</h5></li>
+                    <li><h5>Tyrone</h5></li>
+                    <li><h5>Monaghan</h5></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+          <!-- Areas covered - only visible on medium and small devices        -->
 
         <!-- testimonials -->
         <section class="testimonials">
             <div class="row">
                 <!-- https://getbootstrap.com/docs/4.0/utilities/spacing/#notation -->
-                <div class="col-12 my-5">
+                <div class="col-12 my-5 d-flex justify-content-center">
                     <h3 class="title">Here's what our Customers have to say</h3>
                 </div>
             </div>
@@ -110,11 +138,11 @@
                     </ul>
                 </div>
 
-                <div class="col-sm-6 d-flex justify-content-center" id="socials">
+                <div class="col-sm-6 d-flex justify-content-center socials">
                     <ul>
-                        <li><a class="custom-white link" href=""><i class="fab fa-facebook"></i></a></li>
-                        <li><a class="custom-white link" href=""><i class="fab fa-twitter"></i></a></li>
-                        <li><a class="custom-white link" href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a class="custom-white link" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
+                        <li><a class="custom-white link" href="https://twitter.com/?lang=en"><i class="fab fa-twitter"></i></a></li>
+                        <li><a class="custom-white link" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
