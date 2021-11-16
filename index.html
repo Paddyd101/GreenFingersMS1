@@ -11,53 +11,106 @@
     <title>Green Fingers</title>
 </head>
 <body>
-    <section>
-        <!-- <div class="container-fluid"> -->
-            <div>
-                <a id="logo" href="index.html">
-                <h1>Green Fingers <i class="fas fa-hand-paper"></i></h1>
-                <h5>Gardening and Outdoor Maintenance</h5>
-                </a>    
-            </div>
-                <nav>
-                    <ul id="nav-list">
-                        <div>
-                            <li> <a class="active" href="#">Home</a></li>
-                            <li> <a href="#">Previous Work</a></li>
-                            <li> <a href="/">Contact Us</a></li>
-                        </div>
-                    </ul>
-                </nav>
-        <!-- </div> -->
-    </section>
-    <section>
-        <div class="hero-frame">
-            <div class="hero-section">
+    <!-- https://getbootstrap.com/docs/4.0/components/navbar/ -->
+    <nav class="navbar navbar-expand-sm fixed-top">
+        <a href="index.html" class="navbar-brand">
+            <h1>Green Fingers <i class="fas fa-seedling"></i></h1>
+            <h5>Gardening and Outdoor Maintenance</h5>
+            </a>
+            <ul class="navbar-nav ml-auto">
+                    <li class=" active nav-item mr-3"><a class="link" href="/">Home</a></li>
+                    <li class=" nav-item mr-3"><a class="link" href="#">Previous Work</a></li>
+                    <li class=" nav-item mr-3"><a class="link" href="#">Contact Us</a></li>
+            </ul>
 
+
+    </nav>
+    <!-- https://getbootstrap.com/docs/4.0/utilities/spacing/#notation -->
+    <article class="container-fluid mt-3">
+        <!-- hero-section -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <section class="header-sect">
+                        <div class="hero-frame">
+                            <div class="hero-section">
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </div>
         </div>
-    </section>
-    <section>
-        Testimonials
-    </section>
-    <section>
-        <footer>
-            <div id="footer-nav-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="previousWork.html">Previous Work</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </div>
+        <!-- hero-section -->
 
-            <div id="socials">
-                <ul>
-                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                </ul>
+        <!-- testimonials -->
+        <section class="testimonials">
+            <div class="row">
+                <!-- https://getbootstrap.com/docs/4.0/utilities/spacing/#notation -->
+                <div class="col-12 my-5">
+                    <h3 class="title">Here's what our Customers have to say</h3>
+                </div>
             </div>
-        </footer>
-    </section>
+            <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="images">
+                            <!-- https://stackoverflow.com/questions/35163164/how-to-center-content-in-a-bootstrap-column -->
+                            <div class="d-flex justify-content-center">
+                                <img src="/assets/images/gazebo.jpg" alt="Picture of gazebo" class="circle-image d-flex justify-content-center">
+                            </div>
+                            <blockquote>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui repellendus magnam explicabo fugiat, quasi hic a. Excepturi, ipsum autem error veniam nulla eos officia neque molestias voluptatum assumenda! Delectus, consectetur.</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="images">
+                            <div class="d-flex justify-content-center" >
+                                <img src="/assets/images/lawn.jpg" alt="Picture of Lawn" class="circle-image">
+                            </div>
+                            <blockquote>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui repellendus magnam explicabo fugiat, quasi hic a. Excepturi, ipsum autem error veniam nulla eos officia neque molestias voluptatum assumenda! Delectus, consectetur.</p>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <!-- code (d-lg-block d-md-none) utilised from Whiskey Drop Project on Code Institute tutorials -->
+                    <div class="col-lg-4 col-12 d-lg-block d-md-none">
+                        <div class="images">
+                            <div class="d-flex justify-content-center" >
+                                <img src="/assets/images/lady in garden.jpg" alt="Picture of a lady in a garden" class="circle-image d-flex justify-content-center">
+                            </div>
+                                <blockquote>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui repellendus magnam explicabo fugiat, quasi hic a. Excepturi, ipsum autem error veniam nulla eos officia neque molestias voluptatum assumenda! Delectus, consectetur.</p>
+                            </blockquote>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <!-- testimonials -->
+       
+        <!-- footer -->
+        <section class="footer container-fluid">
+            <!-- https://getbootstrap.com/docs/4.0/utilities/spacing/#notation -->
+            <!-- CIs Anna Greaves https://www.youtube.com/watch?v=zDpCejbl1sU&t=9s -->
+            <div class="row my-5 justify-content-between">
+                <div class="col-sm-6 d-flex justify-content-center">
+                    <ul>
+                        <li><a class="custom-white link" href="index.html">Home <i class="fas fa-home"></i></a></li>
+                        <li><a class="custom-white link" href="previousWork.html">Previous Work <i class="fas fa-seedling"></i></a></li>
+                        <li><a class="custom-white link" href="contact.html">Contact Us <i class="fas fa-phone"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-6 d-flex justify-content-center" id="socials">
+                    <ul>
+                        <li><a class="custom-white link" href=""><i class="fab fa-facebook"></i></a></li>
+                        <li><a class="custom-white link" href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a class="custom-white link" href=""><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+    </article>
 </body>
 </html>

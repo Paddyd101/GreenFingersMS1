@@ -8,20 +8,61 @@ body{
         font-family: Lato;
         color:#777777;
       }
-      
-h1, h5{
-    color: #292727;
+
+
+/* --------------font-colours---------- */
+
+.custom-white{
+    color: #fafafa;
 }
+
+      
+/* h1, h5{
+    color: #fafafa;
+} */
 
 li{
     color: #292727;
 }
 
+.navbar{
+    background-color: rgb(72, 71, 116);
+    padding:0;
+}
 
-#logo{
-    float: left;
+.link{
+    color:#fafafa;
     text-decoration: none;
-    margin-left: 30px;
+    font-size: 20px;
+    list-style: none;
+}
+
+.link:hover{
+    color:#fafafa;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.navbar-brand{
+    color:#fafafa;
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+.navbar-brand:hover{
+    color:#fafafa;
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+.title{
+    text-align: center;
+    margin: 30px;
+    color: rgb(72, 71, 116);
+}
+
+#testimonials{
+    margin:30px;
 }
 
 #nav-list{
@@ -30,24 +71,48 @@ li{
     color: #292727;
 }
 
+#nav-list div{
+    margin-top: 30px;
+}
+
 #nav-list li{
     list-style: none;
     display: inline;
-    margin: 0,20px;
-    color: #292727;
+    text-decoration: none;
+}
+
+#nav-list a{
+    margin: 20px;
+    color: #fafafa;
+    font-size: 20px;
+}
+
+.short-divider{
+    width: 50px;
+    height: 50px;
+    color: rgb(72, 71, 116);
+    align-content: center;
+}
+
+/* #header-sect{
+    background-color: rgb(72, 71, 116);
+} */
+
+ul{
+    padding-right: 30px;
 }
 
 .hero-section{
     width: 100%;
-    height: 600%;
+    height: 150vh;
     background: url("../images/Hero-image.jpg") no-repeat center center fixed;
-    height: 100vh;
     margin-bottom: 30px;
+    padding: 30px;
 }
 
 .hero-frame{
     width: 100%;
-    height: 600%;
+    height: 500%;
     overflow: hidden;
 }
 
@@ -73,4 +138,20 @@ li{
 
 .active{
     border-bottom: 1px solid #777777;
+  }
+
+
+  /*---------------- testimonial------------------ */
+
+  .circle-image{
+      border-radius: 50%;
+      height:200px;
+      width: 200px;
+      
+  }
+
+  /* ---------------------footer------------------ */
+
+  .footer{
+      background-color: rgb(72, 71, 116);
   }
