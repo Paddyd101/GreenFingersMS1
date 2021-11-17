@@ -1,6 +1,9 @@
 # Green Fingers
 ## Gardening and Outdoor Maintenance Services
 
+
+![](assets/images/responsive.png)
+
 ## About
 
 **Green Fingers** is a ficticious gardening and outdoor maintenance company who require a B2C website to promote their services. 
@@ -109,11 +112,11 @@ The wireframes were created using [Balsamiq](https://balsamiq.com/) and can be f
 - [CSSgenerator.org Colour Picker](https://cssgenerator.org/rgba-and-hex-color-generator.html)
   - Used to choose the colour scheme by visualising complimentary colours
 - [Lighthouse](https://developers.google.com/web/tools/lighthouse)
-  - Used to audit the site for quality and ensure responsiveness.
+  - Used to assess sight performance.
 - [WebPageTest](https://www.webpagetest.org/)
-  - Used to test performance.
+  - Used to further test site performance.
 - [amiresponsive](http://ami.responsivedesign.is/)
-  - An online tool to check how responsive the site is on different devices.
+  - A tool used to check how responsive the site is on different devices.
 - [tinyjpg.com](https://tinyjpg.com/)
   - used to compress image sizes to optimize site performance 
 
@@ -248,7 +251,7 @@ Testing was performed on Google Chrome and utilised chrome developer tools.
 ### **Performance Testing**
 - [WebPageTest](https://www.webpagetest.org/), Ireland, browser Chrome highligted a 'security' score of E and a 'Cache static content' of D. The developer will consider reviewing these following further education.
   
-- [Lighthouse Report Result]()
+- [Lighthouse Report Result](assets)
   -Main issues to bring down the performance score were things outwith my control - eg. Bootstrap links (error unused CSS) and caching issues (requesting http cache-control)
 
 
