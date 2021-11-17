@@ -251,14 +251,33 @@ ul{
     padding-top: 10px;
 }
 
+/* --------------history page.------------- */
 
-/* -----------media-queries---------- */
+#photo{
+    margin-top: 100px;
+    line-height: 0;
+    column-count: 4;
+    column-gap: 0;
+  
+  }
+  
+  #photo img{
+    width:100%;
+  }
 
-/* @media screen and (max-width: 990px){
-    .area-container{
-        text-align: center;
+  /* credit  http://www.corelangs.com/css/box/hover.html */
+  .box
+    {
+      width: 100%;
+      border: none ;
+      padding: 10px;
     }
-} */
+    .box:hover
+    {
+      -moz-box-shadow: 0 0 50px rgb(75, 70, 70);
+      -webkit-box-shadow: 0 0 50px rgb(75, 70, 70);
+      box-shadow: 0 0 50px rgb(75, 70, 70);
+    }
 
 
 /* ----------Contact page--------- */
@@ -355,4 +374,27 @@ section {
       max-height: 120px;
       max-width: 200px;
       margin-bottom: 20px;
+  }
+
+  /* -----------media-queries---------- */
+
+@media screen and (max-width: 983px){
+    
+    #photo{
+      column-count: 3;
+    }
+  }
+
+  @media screen and (max-width: 800px){
+    
+    #photo{
+      column-count: 2;
+    }
+  }
+
+  @media screen and (max-width: 425px){
+    
+    #photo{
+      column-count: 1;
+    }
   }
