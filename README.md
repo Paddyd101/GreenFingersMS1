@@ -18,9 +18,23 @@ The site is designed to look professional, but avoid a corporate appearance, giv
 - [**UX (User Experience)**](#ux-user-experience)
   - [**User Stories**](#user-stories)
   - [**Site Owner Goals**](#site-owner-goals)
-- [**Design Choices**](#design-choices)
+- [**Design**](#design)
+  - [**Fonts**](#fonts)
+  - [**Colours**](#colours)
+  - [**Images**](#images)
   - [**Wireframes**](#wireframes)
-  
+- [**Technologies Used**](#technologies-used)
+  - [**Languages**](#languages)
+  - [**Libraries**](#libraries)
+  - [**Other Tools**](#other-tools)
+- [**Features**](#features)
+  - [**Future Developments**](#future-developments)
+- [**Version Control**](#version-control)
+- [**Testing**](#testing)
+- [**Bugs**](#bugs)
+- [**Deployment**](#deployment)
+- [**Credits**](#credits)
+
 
 ## **UX (User Experience)**
 
@@ -49,13 +63,13 @@ The site is designed to look professional, but avoid a corporate appearance, giv
 
 [Back to contents](#contents)
 
-## Design
+## **Design**
 
-### Fonts
+### **Fonts**
 
 This site was designed using the [Exo](https://fonts.google.com/specimen/Exo) and [Roboto](https://fonts.google.com/specimen/Roboto) fonts from [Google Fonts](https://fonts.google.com/). These particular fonts are clear, legible and professional.  
 
-### Colours
+### **Colours**
 
 The target user of the site is someone who has a garden which requires some degree of managing. Gardens reprersent life and vibrance and with that a bright and vibrant color scheme was chosen alongside images of the same nature.
 
@@ -69,7 +83,7 @@ To contrast this, a font colour of hexidecimal #fafafa, an off-white colour was 
 
 Format: [CSSgenerator.org Colour Picker](https://cssgenerator.org/rgba-and-hex-color-generator.html)
 
-### Images
+### **Images**
 
 It was important for the site to be visually appealling. Choosing vibrant, and striking images was paramount. All of the images were sourced (with thanks) from [Pexels.com](https://www.pexels.com/) and free to use with appropriate acknolwedgment.  
 
@@ -83,21 +97,21 @@ The wireframes were created using [Balsamiq](https://balsamiq.com/) and can be f
 
 [Back to contents](#contents)
 
-## Technologies Used
+## **Technologies Used**
 
-### Langauges
+### **Langauges**
 
 - [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
   - Hypertext markup language for the website content.
 - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
   - Cascading Style Sheets, used to style the website.
 
-### Libraries
+### **Libraries**
 
 -[Bootstrap](https://getbootstrap.com/)  
   - Utilised for its grid layout, form and modal components.
 
-### Other Tools
+### **Other Tools**
 
 - [GitHub](https://github.com/)
   - Used for version control and saving current work to git hub repository. Git hib was also used to deploy the live website on github pages.
@@ -123,8 +137,6 @@ The wireframes were created using [Balsamiq](https://balsamiq.com/) and can be f
 [Back to contents](#contents)
 
 ## **Features**
-
-### **Features Implemented**
 
 Features consistent throughout the site:
 - **Header**
@@ -196,7 +208,7 @@ The developer endeavoured to commit changes to the code regularly. A general rul
 
 ## **Testing**
 
-### **Functionality Testing**
+### **Function Testing**
 
 Testing was performed on Google Chrome and utilised chrome developer tools. 
 
@@ -234,7 +246,6 @@ Testing was performed on Google Chrome and utilised chrome developer tools.
   - [x]I want to see examples of work previously carried out by the company
   - [x]I want to see testimonials from the company's previous customers
   - [x]I want to clearly see the contact details, hours of work and location of the business.
-
   
 - As a user returning to the site:
   - [x]I want to see up to date testimonials and examples of recent work that has been done. 
@@ -256,139 +267,92 @@ Testing was performed on Google Chrome and utilised chrome developer tools.
 
 
 ### **Responsive**
-The site is responsive on all browsers and mobile through bootstrap framework and media queries and was tested using [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/). 
-The live site address was given to family and friends as well as the business owner to confirm the links work as expected and is responsive on all devices. 
-
+The site is responsive on all screen sizes. This was achieved using the bootstrap framework and CSS media queries.
 
 ### **W3C Validator**
 
-**W3C tests completed for html and css pages**
+**index.html**
 
-![index.html](assets/images/readme-imgs/html-validator.PNG)
-See [bugs](#bugs), below
+![index.html](assets/images/indexhtmlw3c.png)
 
-![contact.html](assets/images/readme-imgs/html-validator-contact.PNG))
+![history.html](assets/images/historyw3c.png)
 
-![css](assets/images/readme-imgs/css-validator.PNG)
+![contact.html](assets/images/contactw3c.png)
+See [bugs](#bugs)
+
+![404.html](assets/images/404w3c.png)
+
+![css](assets/images/cssW3c.png)
 
 [Back to contents](#contents)
 
 
 ## **Bugs**
 
-- iframe bug
-  - During testing the [W3C Validator](#w3c-validator) flagged the usage of <p> within the iframe which would be displayed if the youtube video would not load. This was learned on the course and there doesn't seem to be an alternative from my research. 
+- Error: Attribute my-2 not allowed on element h4 at this point.
+  - my-2 class removed
 
-- navbar toggler
-  - During coding process navbar toggle menu background was transparent and required a fix by setting background color to the links.
+- Error: Bad value "contactForm " for attribute id on element form: An ID must not contain whitespace.
+  - white space removed after contactForm
 
-- Overlapping content
-  - During coding process some elements were overlapping but fixed by assigning max-width 100vh to the background images.
-
-- Gutter issue
-  - During coding there was a horizontal scroll bar discovered and through some troubleshooting I discovered an extra div row class so fixed soon after discovery. 
-
+- Error: Text not allowed in element iframe in this context.
+  - <p></p> not permitted in iframe
 
 [Back to contents](#contents)
 
 
 ## **Deployment**
 
-The project was developed using [GitPod](https://gitpod.io/) and pushed to [GitHub](https://github.com/) as follows:
-
-To deploy the page to **GitHub Pages** these steps were taken:
-1. Log in to **GitHub**.
-2. Select **suzybee1987/ms1-ali-shiatsu**.
-3. Click Settings and scroll down to **Pages**.
-4. Under **Source** select **None** and then **Master Branch**.
-5. The site automatically refreshes and the website deployed providing the link: https://suzybee1987.github.io/ms1-ali-shiatsu/index.html
+The website was deployed to **GitHub Pages**.
+1. Select **Paddyd101/GreenFingersMs1**.
+3. Select **Settings**
+4. Select **Pages**.
+4. Under **Source** select **Main** and then **root**.
+5. The site is deployed on: https://paddyd101.github.io/GreenFingersMs1/
 
 
-### How to contribute to the site
+### How to contribute
 
-1. Navigate to [GitHub](https://github.com/) and log in
-2. Locate my [repo](https://github.com/suzybee1987/ms1-ali-shiatsu)
-3. On the right side of the screen click Fork
-4. This creates a copy in your own repository to make changes in [GitPod](https://gitpod.io/)
-5. Once finished with changes add, commit and push to your own [GitHub](https://github.com/)
-6. Click Pull Requests and select "New Pull Request" button.
+1. Login to [GitHub](https://github.com/)
+2. GreenFingersMs1 [repo](https://paddyd101.github.io/GreenFingersMs1)
+3. Click **Fork**
+4. Select [GitPod](https://gitpod.io/) from your own forked version of the repository.
+5.  Add, commit and push changes back to your to your own [GitHub](https://github.com/)
+6. Create a Pull Request (PR).
 
 
-### How to run the project locally
+### Run the project locally
 
-To clone this project from GitHub follow the instructions taken from [GitHub Docs](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository):
-1. Navigate to the [GitHub Repository](https://github.com/suzybee1987/ms1-ali-shiatsu)
-2. Above the files click the green Download Code link.
-3. To clone using HTTPS click the clipboard symbol under "Clone with HTTPS". To clone using SSH key click Use SSH then click the clipboard symbol. To clone using GitHub CLI select Use GitHub CLI and click the clipboard symbol. 
+1. [GitHub Repository](https://github.com/suzybee1987/ms1-ali-shiatsu)
+2. Above the files click the **code** button and copy the HTTPS or SSH code.
+3. To clone using HTTPS click the clipboard symbol under "Clone with HTTPS". 
 4. Open Git Bash
-5. Change the working directory to the location you want the cloned directory to be.
-6. Type 'git clone' and paste the url copied from step 3. 
+5. Navigate to your desired working directory.
+6. Type 'git clone' followed by the url copied from step 3. 
 7. Press 'enter' to create your clone.
+8. Use git checkout -b "..branchName.." to rename your local branch
 
 [Back to contents](#contents)
 
 
 ## **Credits**
 
-
-### **Code**
-
 - CodeInstitute Full Stack Developer Course
-- LinkedIn Learning course by [James Williamson](https://www.linkedin.com/learning/html-essential-training-2017/)
-- LinkedIn Learning course by [Christina Truong](https://www.linkedin.com/learning/css-essential-training-3/)
 
 ### **Content**
 
-- The information provided regarding Shiatsu was provided by the business owner, Alison Melville. 
-- README.md help came from: 
-  -[Code Institute](https://github.com/Code-Institute-Solutions/SampleREADME)
-  -CI Student [Simon Vardy](https://github.com/simonjvardy/Aviation-Consultancy/blob/master/README.md)
-  -My Mentor - Maranatha Ilesanme sent me [Liga Baikova's README.md](https://github.com/LigaMoon/Boredom-guide/blob/master/README.md) to use as a rough template.
+- README.md guidance from:
+  - [Code Institute SampleREADME.md](https://github.com/Code-Institute-Solutions/SampleREADME)
+  - Credit to sample of layout from CIs [suzybee1987](https://github.com/suzybee1987/ms1-ali-shiatsu/blob/master/README.md) 
+
   
 ### **Layout**
 
--Code Institute lessons using bootstrap
--[Background layout](https://css-tricks.com/perfect-full-page-background-image/) from css-tricks.com
-
--[Layout fix](https://css-tricks.com/fixed-headers-on-page-links-and-overlapping-content-oh-my/) when contact form overlapped footer
-
--[Lazy Loading](https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading) added to iframes after reading Lighthouse report which showed these slow down the site loading time. Solution found [here](https://css-tricks.com/the-complete-guide-to-lazy-loading-images/)
-
--[Modal on submission](https://github.com/natalie-kate/haunted) issue was coming up because the button type="button" was required to make the modal work but this button type doesn't produce error if required fields not completed. Checked on slack and found a solution from post on #peer-code-review where @Nat_kate managed to fix this issue.
-
+- Code Institutes Anna Greaves [youtube](https://www.youtube.com/watch?v=zDpCejbl1sU&t=9s) video on bootstrap containers
 
 ### **Images**
 
-- #index.html
-  - The [Hero image](assets/images/conscious-design-J16LdoIsRJM-unsplash.jpg) on index.html was sourced from [Unsplash](https://unsplash.com/). Photo by <a href="https://unsplash.com/@conscious_design?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Conscious Design</a> on <a href="https://unsplash.com/s/photos/massage-therapy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  - The images of [Alison Performing Shin Tai Massage](assets/images/Ali-massage2.jpg) and [Alison's profile photo](assets/images/ali-photo2.jpg) were taken by her husband, Iain Melville.
-
-- #contact.html
-  - The hero image on contact.html was sourced from [Unsplash](https://unsplash.com/). Photo by <a href="https://unsplash.com/@lgence?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Laurent Gence</a> on <a href="https://unsplash.com/@dfu05229/likes?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
-
-### **Videos**
-
--index.html
-  - The [Massage Demonstration Video](https://youtu.be/aLYgPbQXyGw) is performed by Saul Goodman who came up with the Shin Tai blend of massage. 
-  
-  
-### **Inspiration**
-
-- Scrollspy navigation inspiration from Peer Code Review project posted by [Claire Lemonair](https://github.com/lemocla/MS1-Catsitting)
-- The business owner shared some well known sites to compare to: [Dawn Oei](https://www.dawnoei-shiatsushintai.com/), [Kindy Kaur Shiatsu](https://www.kindykaur.com/)
-
-
-### **Acknowledgements**
-
-- My Mentor for confidence boosting and helpful advice and feedback.
-- Friends and family for testing the site and giving feedback.
+- All images were sourced on the pexels.com website and can be found [here](https://www.pexels.com/search/garden/)
 
 [Back to contents](#contents)
 
-
-colour generator
-https://cssgenerator.org/rgba-and-hex-color-generator.html
-
-
-MODAL 
