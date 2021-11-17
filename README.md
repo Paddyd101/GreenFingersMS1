@@ -114,6 +114,8 @@ The wireframes were created using [Balsamiq](https://balsamiq.com/) and can be f
   - Used to test performance.
 - [amiresponsive](http://ami.responsivedesign.is/)
   - An online tool to check how responsive the site is on different devices.
+- [tinyjpg.com](https://tinyjpg.com/)
+  - used to compress image sizes to optimize site performance 
 
 [Back to contents](#contents)
 
@@ -246,7 +248,7 @@ Testing was performed on Google Chrome and utilised chrome developer tools.
 ### **Performance Testing**
 - [WebPageTest](https://www.webpagetest.org/), Ireland, browser Chrome highligted a 'security' score of E and a 'Cache static content' of D. The developer will consider reviewing these following further education.
   
-- [Lighthouse Report Result](assets/images/readme-imgs/lighthouse-report.PNG)
+- [Lighthouse Report Result]()
   -Main issues to bring down the performance score were things outwith my control - eg. Bootstrap links (error unused CSS) and caching issues (requesting http cache-control)
 
 
