@@ -259,3 +259,99 @@ ul{
         text-align: center;
     }
 } */
+
+
+/* ----------Contact page--------- */
+
+section {
+    display: block;
+}
+
+.hero-contact {
+    min-height: 100vh;
+    padding-top: 100px;
+    background: url("../images/Hero-image.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contact-form {
+    position: relative;
+    background: rgba(245, 244, 244, 0.7);
+    border-radius: 0.5rem;
+    max-width: 500px;
+    padding: 10px 15px 0px 15px;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.map{
+    margin-bottom: 20px;
+}
+
+
+
+.btn.reset {
+    color: #5b76a0;
+    background-color: #f5f9fd;
+    text-align: center;
+    border-color: #80a1d4;
+    border-width: 1px;
+  }
+  
+  .reset:hover {
+    color: #f5f9fd;
+    background-color: #5b76a0;
+    text-decoration-style: solid;
+    text-decoration-color: initial;
+  }
+  
+  .btn.submit {
+    color: #f5f9fd;
+    background-color: #5b76a0;
+    text-align: center;
+    border-color: #80a1d4;
+    border-width: 1px;
+  }
+  
+  .btn.submit:hover {
+    color: #5b76a0;
+    background-color: #f5f9fd;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: initial;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr{
+    background-color: rgba(245, 244, 244, 0.7);
+  }
+
+  .address-container{
+      background-color: rgba(245, 244, 244, 0.7);
+      font-family: "Exo", sans-serif;
+      max-height: 120px;
+      max-width: 200px;
+      margin-bottom: 20px;
+  }
