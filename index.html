@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
@@ -15,8 +18,8 @@
         <!-- https://getbootstrap.com/docs/4.0/components/navbar/ -->
         <nav class="navbar navbar-expand-md fixed-top">
             <a href="index.html" class="navbar-brand">
-                <h2>Green Fingers <i class="fas fa-seedling"></i></h2>
-                <h6 class="tagline">Gardening and Outdoor Maintenance</h6>
+                <h2 class="uppercase heading">Green Fingers <i class="fas fa-seedling"></i></h2>
+                <h6 class="tagline sub-heading">Gardening and Outdoor Maintenance</h6>
                 </a>
 
                 <button class="navbar-toggler navbar-toggler-icon ml-auto" type="button" data-toggle="collapse" 
@@ -38,7 +41,7 @@
     <div class="container-fluid hero-section">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-6 services cover-text">
-                <h3>Services we Offer</h3>
+                <h3 class="heading">Services we Offer</h3>
                 <h5>Grass Cutting</h5>
                 <h5>Tree Surgery</h5>
                 <h5>Power Washing</h5>
@@ -49,25 +52,23 @@
 </div>  
 
 <!-- Areas covered / Credentials    -->
-
-
-<section>
+<section class="container credentials-container">
     <div class="container-fluid">
         <div class="row justify-content-around">
-            <div class="col-md-4 purple-container col-sm-12">
+            <div class="credentials col-md-4 col-sm-12">
                 <ul>
-                    <h3>Areas We Cover</h3>
-                    <li><h5>Fermanagh</h5></li>
-                    <li><h5>Tyrone</h5></li>
-                    <li><h5>Monaghan</h5></li>
+                    <h3 class="heading">Areas We Cover</h3>
+                    <li><h5>Fermanagh <i class="fas fa-map-pin"></i></h5></li>
+                    <li><h5>Tyrone <i class="fas fa-map-pin"></i></h5></li>
+                    <li><h5>Monaghan <i class="fas fa-map-pin"></i></h5></li>
                 </ul>
             </div>
-            <div class="col-md-4 purple-container col-sm-12">
+            <div class="credentials col-md-4 col-sm-12">
                 <ul>
-                    <h3>Fully Insured</h3>
-                    <li><h5>NHBC Registered</h5></li>
-                    <li><h5>ARB Approved</h5></li>
-                    <li><h5>PL & PI cover</h5></li>
+                    <h3 class="heading">Fully Insured</h3>
+                    <li><h5>NHBC Registered <i class="fas fa-check-circle"></i></h5></li>
+                    <li><h5>ARB Approved <i class="fas fa-check-circle"></i></h5></li>
+                    <li><h5>PL & PI cover <i class="fas fa-check-circle"></i></h5></li>
                 </ul>
             </div>
         </div>
@@ -75,14 +76,31 @@
 </section>
 <!-- Areas covered / Credentials   -->
 
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-12 d-flex justify-content-center">
+            <hr class="block-divide">
+        </div>
+    </div>
+</div>
+
 <!-- testimonials -->
 <section class="testimonials">
     <div class="row">
         <!-- https://getbootstrap.com/docs/4.0/utilities/spacing/#notation -->
-        <div class="col-12 my-5 d-flex justify-content-center">
-            <h3 class="title">Here's what our Customers have to say</h3>
+        <div class="col-12 d-flex justify-content-center">
+            <h3 class="title heading">Here's what our Customers have to say</h3>
         </div>
     </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 d-flex justify-content-center">
+                <hr class="block-divide">
+            </div>
+        </div>
+    </div>
+
     <div class="row">
         <div class="col-12 col-md-6 col-lg-4">
             <div class="images">
@@ -128,7 +146,7 @@
                 <div class="col-sm-6 d-flex justify-content-center">
                     <ul>
                         <li class="link"><a class=" nav-item custom-white" href="index.html">Home <i class="fas fa-home"></i></a></li>
-                        <li class="link"><a class="nav-item custom-white" href="previousWork.html">Previous Work <i class="fas fa-seedling"></i></a></li>
+                        <li class="link"><a class="nav-item custom-white" href="history.html">Previous Work <i class="fas fa-seedling"></i></a></li>
                         <li class="link"><a class=" nav-item custom-white" href="contact.html">Contact Us <i class="fas fa-phone"></i></a></li>
                     </ul>
                 </div>
