@@ -12,7 +12,7 @@ body{
       }
 
 
-/* --------------font-colours---------- */
+/* --------------font----------- */
 
 .custom-white{
     color: #fafafa;
@@ -25,6 +25,7 @@ body{
 .heading{
     font-family: "Exo", sans-serif;
     font-weight: 600;
+    margin-top: 20px;
 }
 
 h5{
@@ -43,6 +44,8 @@ li{
 li:active{
     font-weight: 900;
 }
+
+/* ----------Nav---------- */
 
 .navbar{
     background-color: rgb(72, 71, 116);
@@ -75,17 +78,6 @@ li:active{
     padding-left: 30px;
 }
 
-.title{
-    text-align: center;
-    margin: 30px;
-    color: rgb(72, 71, 116);
-}
-
-#testimonials{
-    margin:30px;
-}
-
-/* ------------Nav----------------------- */
 
 /* https://stackoverflow.com/questions/42586729/how-can-i-change-the-bootstrap-4-navbar-button-icon-color */
 .navbar-toggler-icon {
@@ -119,6 +111,36 @@ li:active{
     font-size: 20px;
 }
 
+.title{
+    text-align: center;
+    margin: 30px;
+    color: rgb(72, 71, 116);
+}
+
+.active{
+    border-bottom: 1px solid #777777;
+  }
+
+/* --------testimonials--------- */
+
+#testimonials{
+    margin:30px;
+}
+
+.circle-image{
+    border-radius: 50%;
+    height:200px;
+    width: 200px;
+    
+}
+
+blockquote{
+    margin-top: 15px;
+}
+
+
+/* -------miscellaneous features------------- */
+
 .block-divide{
     width: 50px;
     height: 5px;
@@ -131,16 +153,22 @@ ul{
     padding-right: 30px;
 }
 
+
+/* -------------hero Section-------------- */
+
 .hero-section{
     height:100vh;
     width:100%;
     background: url("../images/Hero-image.jpg") no-repeat center center fixed;
     position: relative;
-
-    /* -webkit-background-size: cover;
+    -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover; */
+    background-size: cover;
+
+    animation-name: image-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 
     }
 
@@ -150,6 +178,16 @@ ul{
     /* overflow: hidden; */
     position: relative;
 }
+
+/* credit CI Love running */
+@keyframes image-zoom{
+    from{
+      transform: scale(1);
+    }
+    to{
+      transform: scale(1.1);
+    }
+  }
 
 .cover-text{
     font-size: 130%;
@@ -165,54 +203,19 @@ ul{
 
   .services{
     width:100px;
-    height:250px;
+    height:265px;
     padding-top: 20px;
     padding-left: 10px;
     left: 5px;
     position: relative;
   }
 
-  .locations{
-        width:200px;
-        height:180px;
-        padding-top: 20px;
-        padding-left: 10px;
-        right: 30px;
-        position: relative;
-
-  }
-
-.socials li{
-    display: inline;
-    list-style: none;
-    margin-right: 40px;
-    font-size: 40px;
-}
+   /* ---------------------footer------------------ */
 
 #footer-nav-links{
     float: left;
     margin-left: 20px;
 }
-
-.active{
-    border-bottom: 1px solid #777777;
-  }
-
-
-  /*---------------- testimonial------------------ */
-
-  .circle-image{
-      border-radius: 50%;
-      height:200px;
-      width: 200px;
-      
-  }
-
-  blockquote{
-      margin-top: 15px;
-  }
-
-  /* ---------------------footer------------------ */
 
   .footer{
       background-color: rgb(72, 71, 116);
@@ -234,10 +237,15 @@ ul{
     margin-top: 20px;
 }  
 
-  .socials li{
+.socials li{
     display: inline;
     list-style: none;
     margin-right: 40px;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #fafafa;
 }
 
 .credentials, .credentials li{
@@ -266,14 +274,27 @@ ul{
   }
 
   /* credit  http://www.corelangs.com/css/box/hover.html */
-  .box
-    {
+  .box{
       width: 100%;
       border: none ;
       padding: 10px;
     }
-    .box:hover
-    {
+
+    .box:hover{
+      -moz-box-shadow: 0 0 50px rgb(75, 70, 70);
+      -webkit-box-shadow: 0 0 50px rgb(75, 70, 70);
+      box-shadow: 0 0 50px rgb(75, 70, 70);
+    }
+
+    .box-testimonials{
+      width: 100%;
+      width:100%;
+      border: none ;
+      padding: 10px;
+      border-radius: 50%;
+    }
+
+    .box-testimonials:hover{
       -moz-box-shadow: 0 0 50px rgb(75, 70, 70);
       -webkit-box-shadow: 0 0 50px rgb(75, 70, 70);
       box-shadow: 0 0 50px rgb(75, 70, 70);
@@ -398,3 +419,10 @@ section {
       column-count: 1;
     }
   }
+
+  /* --------404------------- */
+
+.error-404{
+    margin-top: 400px;
+    color: #fafafa;
+}
